@@ -1,0 +1,138 @@
+=======================
+- Menu:
+    - id
+    - name
+- Sub_menu_lv1
+    - id
+    - id_menu
+    - name
+- sub_menu_lv2
+    - id
+    - id_sub_menu_lv1
+——or—
+[
+	{
+		‘id’: 1,
+		‘name’: ‘List sản phẩm 1’,
+		‘order’: 1,
+		‘sub_menu’: [
+			{
+				‘name’: ‘Danh mục lv1’,
+				‘url’: xxx,
+				‘sub_menu’: [
+					{
+					‘name’: ‘Danh mục lv2’,
+					‘url’: ‘xxx’
+					},
+					…
+				]
+			},
+			…
+		]
+	},
+	…
+]
+=======================
+
+- SanPham:
+    - id_sanpham
+    - title
+    - ten
+    - mo_ta
+    - gia_ca
+    - so_luong
+    - id_danhmuc
+
+- SanPham_DanhMuc
+    - id
+    - id_sanpham
+    - id_danhmuc
+
+- SanPham_Image
+    - id
+    - id_sanpham
+    - id_image
+    - order
+
+- Danh muc
+    - id_danhmuc
+    - name
+
+- User
+    - id_user
+    - name
+    - age
+    - address
+    - email
+    - phone_number
+
+- DonDatHang
+    - id_don
+    - id_user
+    - id_sanpham
+    - so_luong
+    - comment
+    - tgian_dat_hang
+
+- GioHang
+    - id_gio_hang
+    - id_user
+
+- GioHang_SanPham
+    - id
+    - id_gio_hang
+    - id_sanpham
+    - so_luong
+    - tong_gia
+
+======================
+
+- TinTuc
+    - id_tintuc
+    - title
+    - mo_ta
+    - chi_tiet
+    - img_overview
+    - tgian_tintuc
+
+- Image
+    - id_image
+    - url
+    - create_date
+    - order
+- Image_TinTuc
+    - id
+    - id_image
+    - id_tintuc
+    - order
+
+- TinTucDescription
+    - id_tintuc_description
+    - noi_dung
+
+- TinTucDescription_TinTuc
+    - id
+    - id_tintuc_description
+    - id_tintuc
+    - order
+=========================
+- LienHe
+    - id
+    - id_user
+    - name
+    - email
+    - chu_de
+    - loi_nhan
+
+- Profile_Store
+    - id_profile
+    - name
+- Profile_address
+    - id_address
+    - address
+- Profile_phone
+    - id_phone
+    - phone
+- Profile_email
+    - id_email
+    - email
