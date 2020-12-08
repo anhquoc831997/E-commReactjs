@@ -1,5 +1,19 @@
+.wrapper {
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+li {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 .App {
-  text-align: center;
+  /* text-align: center; */
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .App-logo {
